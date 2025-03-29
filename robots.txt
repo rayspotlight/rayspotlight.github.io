@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assets/  # Block search engines from indexing assets
+Sitemap: https://rayspotlight.com/sitemap.xml
+
+User-agent: Yandex
+Crawl-delay: 10
