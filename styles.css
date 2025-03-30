@@ -2,6 +2,7 @@
 
 :root {
 --header-bg: #d23559;
+--accent-color: #faf0ef;
 --body-bg: #ffeaef;
 --max-width: 1600px;
 --transition: all 0.3s ease-in-out;
@@ -271,7 +272,7 @@ height: 16px;
 transition: var(--transition);
 }
 
-.music-button:hover, .music-button:focus {
+.music-button:hover, .music-button:focus, .return-home-button:hover, .return-home-button:focus {
 background-color: var(--header-bg);
 color: white;
 }
@@ -860,6 +861,42 @@ color: var(--header-bg);
 font-weight: 500;
 }
 
+.error-page-container {
+display: flex;
+margin: 0 auto;
+justify-content: center;
+align-items: center;
+flex: 1;
+padding: 20px;
+max-width: 800px;
+}
+
+.error-page {
+background: white;
+border-radius: 10px;
+text-align: center;
+padding: 40px 20px;
+margin: 0 auto;
+width: 90%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+        
+.error-page-image {
+max-width: 100px;
+margin-bottom: 10px;
+}
+
+.return-home-button {
+ display: inline-block;
+ margin-top: 10px;
+ padding: 8px 16px;
+ background-color: var(--accent-color);
+ color: var(--header-bg);
+ border-radius: 25px;
+ text-decoration: none;
+ font-weight: 500;
+ transition: background-color 0.3s ease, transform 0.2s ease;
+}
 @media (max-width: 1024px) {
   .bento-grid {
 grid-template-columns: repeat(2, 1fr);
